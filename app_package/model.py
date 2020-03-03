@@ -15,8 +15,8 @@ class User(UserMixin,db.Model):
 		self.password_hash=pbsha.hash(password)
 	def check_password(self,password):
 		return pbsha.verify(password,self.password_hash)
+#welocme to you
 
-
-		#g4uhdgrcrc
+		
 
 	
