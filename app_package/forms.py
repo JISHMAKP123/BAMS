@@ -44,3 +44,4 @@ class DeleteConfirmForm(FlaskForm):
 	name=StringField("name")
 	bal=IntegerField("Balance")
 	submit=SubmitField("Confirm")
+#fdhgfjgulkj
