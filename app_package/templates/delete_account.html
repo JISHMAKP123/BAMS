@@ -4,7 +4,7 @@
 <form action="" method="POST" novalidate>
 	{{form.hidden_tag()}}
 	<fieldset>
-	<legend>Delete accounttt</legend>
+	<legend>Delete account</legend>
 	<p>{{form.accno.label}}{{form.accno(size=32,autofocus="true")}}
 	{% for error in form.accno.errors %}
 		<span style="color:red";>{{error}}</span>
