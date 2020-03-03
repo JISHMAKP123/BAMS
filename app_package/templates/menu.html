@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BAMS</title>
+  <meta charset="utf-8">
+  
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BAMS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{{url_for('logout')}}">Logout</a></li>
+	  <li><a href="{{url_for('newaccount')}}">Create account</a></li>
+	  <li ><a href="{{url_for('deposite_money')}}">Deposite money</a></li>
+      <li><a href="{{url_for('withdraw_money')}}">withdraw money</a></li>
+      <li><a href="{{url_for('deleteaccount')}}">DeleteAccount</a></li>
+      <li><a href="{{url_for('display_details')}}">Display Details</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+
+</body>
+</html>
+	
+	
+{% endblock %}

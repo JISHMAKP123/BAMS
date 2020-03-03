@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<fieldset>
+<legend>Dispaly Details</legend>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>AccountNumber</th>
+		<th>Balance</th>
+		<th>Credit</th>
+		<th>Debit</th>
+		<th>Priority type</th>
+	</tr>
+
+	{% for bank in bank %}
+	<tr>
+		<td>{{bank._id}}</td>
+		<td>{{bank.name}}</td>
+		<td>{{bank.accno}}</td>
+		<td>{{bank.bal}}</td>
+		<td>{{bank.credit}}</td>
+		<td>{{bank.debit}}</td>
+		<td>{{bank.atype}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</fieldset>
+<p><a href="{{url_for('menu')}}">Back to menu</a></p>
+{% endblock %}

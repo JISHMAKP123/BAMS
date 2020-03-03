@@ -1,0 +1,28 @@
+p{
+    text-align:center;
+    font-size:1.2em;
+    color:orangered;
+    }
+legend{
+  padding-left: 0px;
+  color: blueviolet;
+  
+}
+
+    
+body{
+	
+	margin-left:auto;
+	margin-right:auto;
+ 	margin-top: 60px;
+	background-image:url("/static/images/new.jpg");
+	background-repeat:no-repeat;
+  background-size:cover;
+  font-size: medium;
+	}
+table{
+  margin-left: auto;
+  margin-right:auto;
+	
+
+}
